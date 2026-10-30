@@ -1,84 +1,68 @@
-# MiniBank – Java OOP Semester Project
+MiniBank – Java Banking Management System
+Student Details
+- ID: 25IT038
+- Name: Janu Kaila
+- College : CHARUSAT University
+Project Overview
+MiniBank is a console-based banking application developed using Java. It is an educational project that demonstrates object-oriented programming concepts and basic banking operations.
 
-**Course:** Object Oriented Programming (CEUE203)  
-**Technology:** Java 17+, Maven, JUnit 5  
-**Application type:** Console-based educational banking simulation
-
-## Features
-
-- Open Savings, Current and Fixed Deposit accounts
-- Deposit, withdraw and transfer money
-- View account details, statements and account listings
-- Save account data between runs using Java serialization
-- Append-only transaction logs and an end-of-day report
-- Generic `Repository<T>` using reflection and the `@Id` annotation
-- Collections (`HashMap`, `ArrayList`, `ConcurrentHashMap`), sorting and comparators
-- Interfaces, abstract classes, inheritance, polymorphism, lambdas and marker interfaces
-- Custom annotations and reflection-based validation
-- Checked exception hierarchy
-- Thread-safe account operations and a four-thread transaction processor
-- JUnit 5 tests
-
-> This is a classroom simulation. It does not connect to real banks, payment networks or real customer accounts. Do not enter real financial or personal information.
-
-## Requirements
-
+This application is a classroom simulation only. It does not connect to real banks or payment networks.
+Technologies Used
+- Java 17
+- Maven
+- JUnit 5
+- Java Serialization for saving account data
+Main Features
+- Create Savings, Current, and Fixed Deposit accounts
+- Deposit money into an account
+- Withdraw money with validation
+- Transfer money between accounts
+- View account statements
+- Display all available accounts
+- Generate transaction reports
+- Run batch deposit demonstrations
+- Save account information between application runs
+- Maintain transaction logs
+Java Concepts Demonstrated
+- Classes and objects
+- Encapsulation, inheritance, and polymorphism
+- Abstract classes and interfaces
+- Collections and generics
+- Exception handling and custom exceptions
+- Lambda expressions
+- Multithreading and thread-safe operations
+- Custom annotations and reflection
+- File handling and object serialization
+- JUnit testing
+Project Requirements
 - JDK 17 or later
-- Maven 3.8+ (or use an IDE with Maven support)
-
-Check installation:
-
-```bash
-java -version
-mvn -version
-```
-
-## Run in IntelliJ IDEA / Eclipse / VS Code
-
-1. Extract the ZIP file.
-2. Open the `MiniBank_Project` folder as a Maven project.
-3. Wait for Maven dependencies to download.
-4. Run `src/main/java/com/minibank/MiniBank.java`.
-
-## Build and run from terminal
-
-Open a terminal in the folder containing `pom.xml`:
-
-```bash
+- Maven 3.8 or later
+- Any Java IDE, such as IntelliJ IDEA, Eclipse, or VS Code
+How to Run the Project
+Using an IDE
+1. Extract the project ZIP file.
+2. Open the MiniBank folder as a Maven project.
+3. Wait for Maven to download the required dependencies.
+4. Run src/main/java/com/minibank/MiniBank.java.
+Using the Terminal
+Open a terminal in the project folder (the folder containing pom.xml) and run:
 mvn clean test package
 java -jar target/minibank-1.0.0.jar
-```
-
-The runnable JAR is created at `target/minibank-1.0.0.jar`.
-
-## Data files
-
-The application creates these automatically:
-
-- `data/accounts.dat` – saved account objects
-- `data/logs/transactions.log` – transaction history
-- `data/reports/daily-report.txt` – generated report
-
-The `data/` folder is runtime data and should not be committed to Git.
-
-## Suggested demo
-
-1. Open a Savings account with an opening balance.
-2. Deposit money.
-3. Withdraw a valid amount.
-4. Transfer money to another account.
-5. View the statement and list of accounts.
-6. Generate the report.
-7. Exit and run the program again to confirm that saved accounts load.
-
-## GitHub submission checklist
-
-- Create a private repository named `oop-minibank-<your-roll-number>`.
-- Add your faculty member as a collaborator, as instructed.
-- Commit the source code, `pom.xml`, tests and README.
-- Do not commit generated `data/` files or `target/`.
-- Build and test before submission.
-
-## Important
-
-Replace the sample bank name/branch and add your own name, roll number and college details if your faculty requires them. Read and understand the code, run the test cases, and be ready to explain each class in your viva.
+Application Menu
+The application provides these options:
+1. Open Account
+2. Deposit
+3. Withdraw
+4. Transfer
+5. View Statement
+6. List Accounts
+7. Generate Report
+8. Batch Deposit Demo
+9. Exit
+Generated Data Files
+When the application runs, it creates the following files:
+- data/accounts.dat – stores account information
+- data/logs/transactions.log – stores transaction history
+- data/reports/daily-report.txt – stores the generated report
+Conclusion
+The MiniBank project provides practical experience in developing a Java application using object-oriented programming, collections, exception handling, file handling, and multithreading. It simulates common banking operations in a simple console-based environment.
